@@ -6,6 +6,7 @@ var LeapFrame = function(data) {
      * Check if there is exploitable data in the current frame to move the servos
      * @return true if so, false else
      */
+     /*check if frame is valid for picking up fingers */
     var _isValid = function(frame) {
 	if (frame.pointables && frame.pointables.length === 1) {
 	    var pointableId = frame.pointables[0].handId;
